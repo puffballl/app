@@ -1,0 +1,127 @@
+.c-footer {
+    text-align: center;
+    display: block;
+
+    &--img{
+        width: 100%;
+        float: left;
+        background: url("../images/trunk.png") no-repeat center;
+        background-size: cover;
+        height: 487px;
+    }
+
+    &--search{
+        display: inline-block;
+        background-color: #823039;
+        padding: 5rem 10%;
+        //max-width: 78rem;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 7rem;
+        margin-top: -15rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%, 0 81%);
+
+        &--searchtxt{
+            color: #ffffff;
+            font-size: 2em;
+        }
+
+        &--searchbar{
+            border: none;
+            border-radius: 90px;
+            width: 100%;
+            height: 5rem;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 950px) {
+            &--searchtxt{
+                font-size: 3rem;
+            }
+        }
+        @media (max-width: 750px) {
+            &--searchtxt{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &--logo{
+        text-align: center;
+        padding: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &--menu{
+        border-top: 0;
+        box-shadow: inset 0 0 10px #000000;
+        padding: 2rem;
+        background: #fefefe;
+
+        &--2{
+            background: #fefefe;
+            height: 100%;
+            display: inline;
+            margin: 0 !important;
+        }
+
+        &--2, ul {
+            display: inline;
+            list-style: none;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            li {
+                display: inline;
+                text-align: center;
+                margin-right: 3%;
+
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1599px){
+        &--img{
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 730px){
+        &--menu{
+
+
+            ul{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: space-around;
+                height: 200px;
+                padding-top: 55px;
+                padding-bottom: 55px;
+
+                li{
+                    flex: 1 1 15px;
+                    text-align: left;
+
+                }
+            }
+
+        }
+    }
+    @media (max-width: 390px){
+        &--menu{
+            &--2{
+                text-align: left;
+
+            }
+        }
+    }
+
+}

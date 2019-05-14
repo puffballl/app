@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  #GLOBAL STYLES
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  @include mq-tablet {
+    font-size: 54%;
+  }
+  @include mq-mobile {
+    font-size: 48%;
+  }
+}
+
+::selection {
+
+}
+
+body {
+  overflow-x:hidden;
+  margin: 0;
+  background-image: url("../images/background.png");
+  background-size: contain;
+}
+
+::-webkit-scrollbar {
+
+}
+
+::-webkit-scrollbar-thumb {
+  // background-color: $scrollbar-color;
+}
+
+// img reset
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// basic hr
+hr,
+.hr {
+  display: block;
+  height: 0.1rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (min-width: 1600px) {
+  body{
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+

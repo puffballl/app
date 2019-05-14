@@ -1,0 +1,200 @@
+.c-header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    a{
+        text-decoration: none;
+    }
+    &--nav{
+        display: inline;
+
+
+        .icon{
+            display: none;
+        }
+        &--sec{
+            display: inline;
+        }
+        &--logo{
+            vertical-align: baseline;
+            float: left;
+            margin-left: 2rem;
+        }
+        ul{
+            display: inline;
+            list-style-type: none;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            li{
+                display: inline;
+                list-style-type: none;
+                text-align: center;
+                margin-right: 1%;
+
+                a{
+                    text-decoration: none;
+                    color: #000;
+
+
+                }
+            }
+        }
+        &--searchbar{
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #f3f3f3;
+            height: 4rem;
+            padding-left: 2rem;
+            width: 13rem;
+
+
+        }
+        &--search{
+
+
+            label{
+                margin-left: -2.2rem;
+            }
+            .fa-search{
+                position: relative;
+                left: 14rem;
+                visibility: hidden;
+            }
+        }
+        &--buttons{
+            width: 5rem;
+            height: 5rem;
+            margin: 0;
+            background-color: #fefefe;
+            color: #010101;
+            border: #e4e4e4 1px solid;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+            .fab{
+                height: 100%;
+                width: 100%;
+                vertical-align: bottom;
+                ::before{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        &--current{
+            color: #8F6F46 !important;
+            display: inline;
+
+
+        }
+        @media (max-width: 1599px){
+
+
+            ul{
+
+
+                li{
+                    margin-right: 0.5rem;
+
+
+                }
+            }
+        }
+        @media (max-width: 1150px){
+            &--sec{
+                display: block;
+
+
+            }
+
+
+        }
+        @media (max-width: 870px){
+
+            &--searchbar{
+                display: none;
+            }
+
+            &--pri{
+                text-align: center;
+                width: 100%;
+
+                :first-child{
+                    float: left;
+                }
+                &--responsive{
+                    text-decoration: none;
+                }
+            }
+            &--sec{
+                li:nth-last-child(-n+2){
+                    display: inline;
+                }
+                li{
+                    display: none;
+                }
+            }
+            .icon{
+                display: inline;
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+            }
+            &--responsive {
+                display: block;
+
+
+                a {
+                    float: left;
+                    display: block;
+                    text-align: left;
+                }
+                .icon {
+                    position: absolute;
+                    right: 2rem;
+                    top: 2rem;
+                    display: inline;
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    color: #000;
+                    padding-left: 0;
+
+                    li{
+                        :first-child {
+                            float: left;
+                        }
+                    }
+
+                    li:last-child{
+                        display: inline;
+                    }
+                }
+            }
+            ul{
+
+
+                li:not(:first-child){
+                    display: none;
+                }
+            }
+            &--logo{
+
+                &--responsive{
+                    float: left;
+                }
+            }
+            .fab{
+                display: none;
+            }
+        }
+
+    }
+}

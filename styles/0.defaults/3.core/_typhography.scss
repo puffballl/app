@@ -1,0 +1,114 @@
+/*------------------------------------*\
+  #TYPOGHRAPY
+\*------------------------------------*/
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  margin: 0 0 0.6em 0;
+  font-weight: 400;
+  line-height: 1.18;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: 4.5rem;
+
+  @media (max-width: 550px) {
+    font-size: 4rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 3.5rem;
+
+  @media (max-width: 550px) {
+    font-size: 3.2rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 3rem;
+  font-weight: bold;
+
+  @media (max-width: 550px) {
+    font-size: 2rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+
+  @media (max-width: 550px) {
+    font-size: 1.7rem;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 1.8rem;
+
+  @media (max-width: 550px) {
+    font-size: 1.5rem;
+  }
+}
+
+h6,
+.h6 {
+  font-size: 1.6rem;
+
+  @media (max-width: 550px) {
+    font-size: 1.4rem;
+  }
+}
+
+p,
+.p {
+  margin: 0 0 1em 0;
+  max-width: 900px;
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: 2rem;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.gold-txt{
+  color: #92734c;
+}
+
+.white-txt{
+  color: #ffffff;
+}
+
+.subtext{
+  font-size: 1.5rem;
+}

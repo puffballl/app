@@ -1,0 +1,10 @@
+.u-bx-shadow {
+  box-shadow:         0 0 11px 0 rgba(50, 50, 50, 0.35);
+
+  &--small {
+    box-shadow:         0 0 8px 0 rgba(50, 50, 50, 0.15);
+  }
+  &--invert{
+    box-shadow: 0 8px 6px -6px #eeeeee;
+  }
+}
